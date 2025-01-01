@@ -13,16 +13,3 @@ This repository demonstrates a **ring-based topology** using the P4 language and
 - [p4lang/p4app](https://github.com/p4lang/p4app)  
   (Install via `pip install p4app` or from source)
 - Python 3
-
-## Customization
-
-- **Add More Switches**: You can extend the ring to 4 or more switches in `p4app.json` and adjust your P4 table rules.
-- **Use a Tree Instead of a Ring**: Modify the topology and the CLI commands to create a tree-based approach for different forwarding logic (like parent-child relationships).
-- **Expand the Data Plane**: Add more sophisticated packet processing, header modifications, or even a register-based approach in P4.
-
-## Further Steps
-
-- **Experiment with Measurements**: Add scripts to measure ping latency or throughput. 
-- **FPGA or Tofino**: Once you're comfortable with the software switch, you can port the same P4 code to real hardware that supports P4 or an FPGA-based NIC. 
-- **Integrate with ML**: In a real system, you might have ML processes sending gradient updates, which the data plane routes in a ring or tree for efficient allreduce.
-
